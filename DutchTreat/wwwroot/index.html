@@ -2,43 +2,44 @@
 <html>
 <head>
     <title>Dutch Treat</title>
-    <style>
-        <link href="site.css" rel="stylesheet" / >
-    </style>
+    <link href="css/site.css" rel="stylesheet" />
 </head>
 <body>
     <h2>Dutch Treat</h2>
-    <div>
-        <h3>Mug</h3>
- <!--       <img src="img/Porsche-911-GT3-RS-Weissach-Lizard-Green-GTspirit28.jpg" style="width: 100%;height: auto;" />-->
+
+    <div class="productInfo">
+        <!--<img src="img/Porsche-911-GT3-RS-Weissach-Lizard-Green-GTspirit28.jpg" style="width: 100%;height: auto;" />-->
         <img src="../img/VanGogh.jpg" />
-        <ul>
+        <h3>Mug</h3>
+        <ul class="productProps">
             <li>Price: $9.99</li>
             <li>Artist: Van Gogh</li>
             <li>Title: </li>
             <li>Description: Self-portrait</li>
         </ul>
-        <button>Buy</button>
+        <button id="buyButton">Buy</button>
     </div>
-
-    <form>
-        <label>Your Name:</label>
-        <br />
-        <input/>
-        <br />
-        <label>Email:</label>
-        <br />
-        <input type="email" />
-        <br />
-        <label>Subject:</label>
-        <br />
-        <input type="text" />
-        <br />
-        <label>Message:</label>
-        <br />
-        <textarea rows="4"></textarea>
-        <br />
-        <input type="submit" value="Send Message" />
-    </form>
+    <div id="theForm">
+        <form>
+            <label>Your Name:</label>
+            <br />
+            <input />
+            <br />
+            <label>Email:</label>
+            <br />
+            <input type="email" />
+            <br />
+            <label>Subject:</label>
+            <br />
+            <input type="text" />
+            <br />
+            <label>Message:</label>
+            <br />
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
